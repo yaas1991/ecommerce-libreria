@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Librería Cósmica - Detalle</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Open Sans', sans-serif; background:#f8f9fa; }
+    h1 { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- mismo navbar que en index.html (copia-pega) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">... (exactamente igual que arriba) ...</nav>
+  </header>
+
+  <main class="container my-5 pt-5" id="detail-product">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <img id="product-image" class="img-fluid rounded shadow" style="max-height: 650px; object-fit: contain;" src="/assets/img/compras">
+      </div>
+      <div class="col-lg-6 d-flex flex-column">
+        <h1 id="product-title" class="display-5"></h1>
+        <p class="text-muted fs-4" id="product-author"></p>
+        <p class="fs-2 fw-bold text-primary" id="product-price"></p>
+        <div id="product-description" class="lead mb-4"></div>
+        <button id="add-to-cart-detail" class="btn btn-primary btn-lg w-50 align-self-start add-to-cart" data-id="">Agregar al carrito</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-5 mt-5">... mismo que arriba ...</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/libreria.js"></script>
+</body>
+</html>
